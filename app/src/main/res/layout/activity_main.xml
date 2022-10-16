@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_background1">
+
+    <LinearLayout
+        android:id="@+id/llayout"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <EditText
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:ems="10"
+            android:hint="Enter the text"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:backgroundTint="#E8DBE1"
+            android:onClick="encrypt"
+            android:text="Encrypt" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:backgroundTint="#E4EEEF"
+            android:onClick="decrypt"
+            android:text="Decrypt" />
+
+        <EditText
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

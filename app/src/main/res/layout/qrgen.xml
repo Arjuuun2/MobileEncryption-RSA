@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Qrgenerator"
+    android:background="@drawable/gradient_background">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="147dp"
+        android:backgroundTint="#E7EFF3"
+        android:onClick="QRCodeButton"
+        android:text="Generate"
+        android:textColor="#2E3C33" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="#C8ADAD"
+        app:srcCompat="?attr/actionBarDivider" />
+
+    <Button
+        android:id="@+id/bscan"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="162dp"
+        android:backgroundTint="#AA9EA2"
+        android:text="Scan" />
+
+</RelativeLayout>
